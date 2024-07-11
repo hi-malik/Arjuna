@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form method="post" action="/login">
+            <h1>LogIn Form</h1>
+            <input type="email" name="email" placeholder="Enter Your Email">
+            <input type="password" name="password" placeholder="Enter Your Password">
+            <button>LogIn</button>
+            <p class="error"><%=locals.message%></p>
+        </form>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
